@@ -4,22 +4,19 @@ import ReactDOM from "react-dom/client";
 /* JSX - HTML */
 function Greeting() {
   return (
-    <div>
+    <React.Fragment>
       <h2>My First Component</h2>
-    </div>
+      <ul className="websites">
+        <li>
+          <a href="https://www.google.com/" tabIndex={0}>
+            Google
+          </a>
+        </li>
+      </ul>
+    </React.Fragment>
   );
 }
-
-// function Greeting() {
-//   return React.createElement(
-//     "div",
-//     {},
-//     React.createElement("h2", {}, "My First Component")
-//   );
-// }
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(<Greeting />);
-
-console.log(ReactDOM);
