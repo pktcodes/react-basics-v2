@@ -3,38 +3,32 @@ import ReactDOM from "react-dom/client";
 
 import "./index.css";
 
-const firstBook = {
-  img: "https://m.media-amazon.com/images/I/51Azhu94JlL._SX348_BO1,204,203,200_.jpg",
-  title: "Interesting Facts For Curious Minds",
-  author: "Jordan Moore",
-};
+const books = [
+  {
+    img: "https://m.media-amazon.com/images/I/51Azhu94JlL._SX348_BO1,204,203,200_.jpg",
+    title: "Interesting Facts For Curious Minds",
+    author: "Jordan Moore",
+  },
+  {
+    img: "./images/book-1.jpg",
+    title: "Atomic Habits: Build Good Habits",
+    author: "James Clear",
+  },
+];
 
-const secondBook = {
-  img: "./images/book-1.jpg",
-  title: "Atomic Habits: Build Good Habits",
-  author: "James Clear",
-};
+const names = ["john", "peter", "susan"];
+const newNames = names.map((name) => {
+  return <h1>{name}</h1>;
+});
+
+console.log(newNames);
 
 const BookList = () => {
   return (
     <section className="booklist">
-      <Book
-        img={firstBook.img}
-        title={firstBook.title}
-        author={firstBook.author}
-      >
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
-          laudantium eveniet quasi ex saepe odit quisquam dolores? Perferendis,
-          blanditiis expedita.
-        </p>
-        <button>Click Me</button>
-      </Book>
-      <Book
-        img={secondBook.img}
-        title={secondBook.title}
-        author={secondBook.author}
-      />
+      {names.map((name) => {
+        return <h1>{name}</h1>;
+      })}
     </section>
   );
 };
