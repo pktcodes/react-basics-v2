@@ -21,6 +21,7 @@ const books = [
 const BookList = () => {
   return (
     <section className="booklist">
+      <EventExamples />
       {books.map((book) => {
         return <Book {...book} key={book.id} />;
       })}
@@ -28,9 +29,34 @@ const BookList = () => {
   );
 };
 
+const EventExamples = () => {
+  const handleInputChange = () => {
+    console.log("Handle Input Change");
+  };
+
+  const handleButtonClick = () => {
+    alert("Handle Button Click");
+  };
+
+  return (
+    <section>
+      <form>
+        <h2>Typical Form</h2>
+        <input
+          type="text"
+          name="example"
+          style={{ margin: "1rem 0" }}
+          onChange={handleInputChange}
+        />
+      </form>
+      <button onClick={handleButtonClick}>Click Me</button>
+    </section>
+  );
+};
+
 const Book = (props) => {
   const { img, title, author } = props;
-  console.log(props);
+  // console.log(props);
   return (
     <article className="book">
       <img src={img} alt={title} />
