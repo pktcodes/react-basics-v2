@@ -57,3 +57,8 @@ body {
   border-bottom-right-radius: 1rem;
   font-size: 1rem;
 }
+.title {
+  margin-top: 4rem;
+  text-align: center;
+  text-transform: capitalize;
+}
