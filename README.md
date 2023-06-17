@@ -1,12 +1,18 @@
 # React Fundamentals
 
-#### React Course
+> PROD [Live] : https://react-basics-v2-prod.netlify.app
 
-[My React Course](https://www.udemy.com/course/react-tutorial-and-projects-course/?referralCode=FEE6A921AF07E2563CEF)
+To run the project locally, clone the repo, `npm install` to install the dependencies, and `npm start` to start up the development server on default port 3000.
 
-#### Support
+#### Languages
 
-Find the Content Useful? [You can always buy me a coffee](https://www.buymeacoffee.com/johnsmilga)
+HTML, CSS, JavaScript, ECMAScript, React 
+
+#### Deployment / Hosting
+
+Netlify
+
+## Notes
 
 #### Folder Structure
 
@@ -1713,3 +1719,7 @@ npm run dev
 - to spin up dev server - "npm run dev"
 
 - rest the same - imports/exports, deployment, assets, etc...
+
+---
+
+_Note: I have developed this project ~ [0] as part of React 18 Tutorial and Projects Course (2023) taught by John Smilga._
