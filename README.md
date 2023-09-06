@@ -2,7 +2,7 @@
 
 > PROD [Live] : https://react-basics-v2-prod.netlify.app
 
-To run the project locally, clone the repo, `npm install` to install the dependencies, and `npm start` to start up the development server on default port 3000.
+To run the project locally, clone the repo, `npm install` to install the dependencies, and `npm run dev` to start up the development server on default port 5173.
 
 #### Languages
 
